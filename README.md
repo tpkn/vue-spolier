@@ -114,7 +114,34 @@ Vue.component('Spoiler', Spoiler);
 
 
 
+## Custom style
 
+```css
+.vue-spoiler {
+   margin-bottom: 10px;
+   
+   border-radius: 5px;
+   border: 1px solid #cccccc;
+   background-color: white;
+   font-family: 'Fira Sans';
+
+   .title {
+      padding: 10px 15px;
+
+      .arrow {
+         margin-left: auto;
+      }
+   }
+
+   .content {
+      padding: 15px;
+   }
+}
+
+.vue-spoiler.expanded .title {
+   border-bottom: 1px solid #dbdbdb;
+}
+```
 
 
 
