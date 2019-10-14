@@ -54,7 +54,7 @@ Arrow icon indicating the spoiler state
 ## Events
 
 ### expanded
-Called when the spoiler is expanded
+Called as soon as the spoiler has expanded 
 
 ```html
 <Spoiler v-on:expanded="onExpanded"></Spoiler>
