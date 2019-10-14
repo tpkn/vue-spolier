@@ -114,12 +114,12 @@ Vue.component('Spoiler', Spoiler);
 
 
 
-## Custom style
+## Style
 
 ```css
 .vue-spoiler {
    margin-bottom: 10px;
-   
+
    border-radius: 5px;
    border: 1px solid #cccccc;
    background-color: white;
