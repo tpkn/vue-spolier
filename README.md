@@ -30,14 +30,12 @@ Spoiler `.content` block maximum height
 
 ### title
 **Type**: _String_  
-**Default**: ``   
 Spoiler title text. Overrides `<template v-slot:title>`
 
 
 
 ### titleExpanded
 **Type**: _String_  
-**Default**: ``   
 Title after the spoiler expands
 
 
