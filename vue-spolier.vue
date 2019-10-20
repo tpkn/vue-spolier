@@ -27,7 +27,7 @@
 <script>
 
    export default {
-      name: 'Spoiler',
+      name: 'VueSpoiler',
 
       data: () => {
          return {
