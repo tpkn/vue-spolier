@@ -53,8 +53,7 @@ Arrow icon indicating the spoiler state
 **Default**: `false`   
 If `true`, then title would be removed right after the spoiler expands
 
-[uncollapsable](https://raw.githubusercontent.com/tpkn/vue-spolier/master/features/uncollapsable.png)
-
+![uncollapsable](https://raw.githubusercontent.com/tpkn/vue-spolier/master/features/uncollapsable.png)
 
 
 
