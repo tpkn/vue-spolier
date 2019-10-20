@@ -2,14 +2,14 @@
 <template>
    <div :class="['vue-spoiler', { 'expanded': expanded }]" :style="{ width }">
 
-      <div @click="toggleExpand" class="title">
+      <div @click="toggleExpand" v-if="showTitle" class="title">
          <div v-if="!expanded">
-            <div v-if="title">{{ getButtonTitle }}</div>
+            <div v-if="title">{{ getTitleText }}</div>
             <slot v-else name="title"></slot>
          </div>
 
          <div v-else>
-            <div v-if="title || titleExpanded">{{ getButtonTitle }}</div>
+            <div v-if="title || titleExpanded">{{ getTitleText }}</div>
             <slot v-else name="titleExpanded"></slot>
          </div>
 
@@ -31,7 +31,8 @@
 
       data: () => {
          return {
-            expanded: false
+            expanded: false,
+            no_title: true
          }
       },
 
@@ -51,13 +52,20 @@
          'titleExpanded': {
             default: () => ''
          },
+         'uncollapsable': {
+            default: () => false
+         },
          'arrow': {
             default: () => true
          },
       },
 
       computed: {
-         getButtonTitle(){
+         showTitle(){
+            return !this.uncollapsable || (this.uncollapsable && !this.expanded);
+         },
+
+         getTitleText(){
             let title;
             if(this.expanded && this.titleExpanded){
                title = this.titleExpanded;
@@ -81,7 +89,11 @@
 
       watch: {
          expand(){
-            this.expanded = this.expand;
+            if(this.uncollapsable){
+               this.expanded = true;
+            }else{
+               this.expanded = this.expand;
+            }
          },
       }
    }
