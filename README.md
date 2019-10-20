@@ -36,7 +36,7 @@ Spoiler title text. Overrides `<template v-slot:title>`
 
 ### titleExpanded
 **Type**: _String_  
-Title after the spoiler expands
+Title after the spoiler expands. Overrides `<template v-slot:titleExpanded>`
 
 
 
