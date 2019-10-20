@@ -104,6 +104,9 @@ Vue.component('Spoiler', Spoiler);
    <template v-slot:title>
       <h1>SOME REALLY BIG TITLE</h1>
    </template>
+   <template v-slot:titleExpanded>
+      <h1>TITLE AFTER EXPANDING</h1>
+   </template>
    <ul>
       <li>001</li>
       <li>002</li>
