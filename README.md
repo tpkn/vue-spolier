@@ -1,6 +1,6 @@
 # Vue Spoiler
 
-Tiny spoiler component
+A tiny spoiler component
 
 
 
