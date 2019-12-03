@@ -1,6 +1,6 @@
 # Vue Spoiler
 
-Tiny spoiler component based on Vue.
+Tiny spoiler component
 
 
 
